@@ -42,10 +42,10 @@ public class Proveedores
         this.apellidos = apellidos;
     }
  
- 
+ Proveedores arreglo[] = new Proveedores[4];
  public void datos()
  {
-     Proveedores arreglo[] = new Proveedores[4];
+     
       
       arreglo[0]=new Proveedores(102650858,"Marcos","Gonzales Ferreira");
       arreglo[1]=new Proveedores(205870468,"Victor","Valenzuela Morales");
@@ -58,6 +58,14 @@ public class Proveedores
     }
  }
  
-  
+ 
+ public void recorrer()
+ {
+        for (int x=0;x<5;x++)
+    {
+    System.out.println(arreglo[x].cedula+" "+arreglo[x].nombre+" "+arreglo[x].apellidos);
+    }  
+ }       
+ 
  
 }

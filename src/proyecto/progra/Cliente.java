@@ -56,24 +56,24 @@ public class Cliente
     
     public void datos()
     {
-     Cliente arreglo[] = new Cliente[x];
+     Cliente arreglo[] = new Cliente[1];
         
-        x=Integer.parseInt(JOptionPane.showInputDialog("Digite la cantidad de estudiantes que va a ingresar"));
+  
         for (int x=0; x<arreglo.length;x++)
     {
-    JOptionPane.showMessageDialog(null,"se le solicita los datos del Empleado"
-     +x);
-    int edad=Integer.parseInt(JOptionPane.showInputDialog("Escriba la edad"));   
+    JOptionPane.showMessageDialog(null,"se le solicita los datos del cliente"
+     +x);   
     String nombre=JOptionPane.showInputDialog("Escriba el nombre");
     String apellidos=JOptionPane.showInputDialog("Escriba los apellidos");   
-    double salario= Double.parseDouble(JOptionPane.showInputDialog("Escriba el salario"));
+    String cedula= JOptionPane.showInputDialog("ingrese la cedula");
+    String email= JOptionPane.showInputDialog("ingrese el email");
     }
         
         
     for (int x=0;x<arreglo.length;x++)
     {
         JOptionPane.showMessageDialog(null,"Cliente: "+arreglo[x].nombre
-        +" "+arreglo[x].apellidos+"cedula: "+arreglo[x].cedula+""+arreglo[x].email);
+        +" "+arreglo[x].apellidos+"cedula: "+arreglo[x].cedula+" "+arreglo[x].email);
     }
     }
 }
