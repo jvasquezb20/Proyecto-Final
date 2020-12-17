@@ -43,10 +43,9 @@ public class Proveedores
     }
  
  Proveedores arreglo[] = new Proveedores[4];
+ 
  public void datos()
  {
-     
-      
       arreglo[0]=new Proveedores(102650858,"Marcos","Gonzales Ferreira");
       arreglo[1]=new Proveedores(205870468,"Victor","Valenzuela Morales");
       arreglo[2]=new Proveedores(118040480,"Juan Josue","Sanchez Villagra");

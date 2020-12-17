@@ -4,12 +4,12 @@ import javax.swing.JOptionPane;
 
 public class Cliente 
 {
-    private int x;
-    private String cedula;
-    private String nombre;
-    private String apellidos;
-    private String email;
-    
+    public int x;
+    public String cedula;
+    public String nombre;
+    public String apellidos;
+    public String email;
+            
  public Cliente()
  {
  }
@@ -70,10 +70,5 @@ public class Cliente
     }
         
         
-    for (int x=0;x<arreglo.length;x++)
-    {
-        JOptionPane.showMessageDialog(null,"Cliente: "+arreglo[x].nombre
-        +" "+arreglo[x].apellidos+"cedula: "+arreglo[x].cedula+" "+arreglo[x].email);
     }
     }
-}

@@ -2,8 +2,8 @@ package proyecto.progra;
 
 public class Estilos 
 {
-    private int precio;
-    private String marca;
+    public int precio;
+    public String marca;
     
  public Estilos()
  {
@@ -40,14 +40,14 @@ public class Estilos
       
      for (int x=0;x<arreglo.length;x++)
     {
-    System.out.println(arreglo[x].marca+" "+arreglo[x].precio);
+    System.out.println(arreglo[x].precio+" "+arreglo[x].marca);
     }
  }
  public void Rdeportivos()
  {
         for (int x=0;x<arreglo.length;x++)
     {
-      System.out.println(arreglo[x].marca+" "+arreglo[x].precio);
+       System.out.println(arreglo[x].precio+" "+arreglo[x].marca);
     }  
  }       
  
@@ -60,7 +60,7 @@ public class Estilos
       
      for (int x=0;x<arreglo.length;x++)
     {
-    System.out.println(arreglo[x].marca+" "+arreglo[x].precio);
+    System.out.println(arreglo[x].precio+" "+arreglo[x].marca);
     }
  }
 
@@ -68,7 +68,7 @@ public class Estilos
  {
         for (int x=0;x<arreglo.length;x++)
     {
-      System.out.println(arreglo[x].marca+" "+arreglo[x].precio);
+      System.out.println(arreglo[x].precio+" "+arreglo[x].marca);
     }  
  }  
  
@@ -80,7 +80,7 @@ public class Estilos
       
      for (int x=0;x<arreglo.length;x++)
     {
-    System.out.println(arreglo[x].marca+" "+arreglo[x].precio);
+    System.out.println(arreglo[x].precio+" "+arreglo[x].marca);
     }
  }
 
@@ -88,7 +88,7 @@ public class Estilos
  {
         for (int x=0;x<arreglo.length;x++)
     {
-      System.out.println(arreglo[x].marca+" "+arreglo[x].precio);
+      System.out.println(arreglo[x].precio+" "+arreglo[x].marca);
     }  
  }       
 }

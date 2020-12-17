@@ -7,13 +7,16 @@ public class Menu
 {
     
      
-    public static void Menu()
-    { 
+    public void Menu()
+    {
+    String marca=" "; 
+    int talla = 0;
+    String color=" ";
     int opcion;
     JOptionPane.showMessageDialog(null,"Bienvenido a la tienda ");
-     Tipo_Zapato fide = new Tipo_Zapato(); 
      Proveedores fide3 = new Proveedores();
      Estilos fide4 = new Estilos();
+     Confirmacion_de_datos llamador2 = new Confirmacion_de_datos();
      
         
         opcion = Integer.parseInt(JOptionPane.showInputDialog(  //opciones del menu
@@ -28,22 +31,30 @@ public class Menu
            case 1: 
            JOptionPane.showMessageDialog(null,"Estos son los estilos Casuales:"); 
           fide4.Rcasuales();
-          fide.zapatocasual();
-       
+      marca = JOptionPane.showInputDialog("Ingrese la Marca de su zapato");
+      talla= Integer.parseInt(JOptionPane.showInputDialog("Ingrese la talla que desea de su zapato"));
+      color= JOptionPane.showInputDialog("Ingrese la el color que desea de su zapato");
+      
+      llamador2.Confirmacion_de_datos();
        break;//llamamos los metodos en el mejor orden
        
         case 2:
             JOptionPane.showMessageDialog(null,"Estos son los estilos Deportivos:");
              fide4.Rdeportivos();
-             fide.zapatodeportivo();
-               
+             
+      marca = JOptionPane.showInputDialog("Ingrese la Marca de su zapato");
+      talla= Integer.parseInt(JOptionPane.showInputDialog("Ingrese la talla que desea de su zapato"));
+      color= JOptionPane.showInputDialog("Ingrese la el color que desea de su zapato");
+      llamador2.Confirmacion_de_datos();
        break;
        
         case 3:
        JOptionPane.showMessageDialog(null,"Estos son los estilo Formales:");
        fide4.Rformal();
-       fide.zapatoelegnate();
-       
+      marca = JOptionPane.showInputDialog("Ingrese la Marca de su zapato");
+      talla= Integer.parseInt(JOptionPane.showInputDialog("Ingrese la talla que desea de su zapato"));
+      color= JOptionPane.showInputDialog("Ingrese la el color que desea de su zapato");
+      llamador2.Confirmacion_de_datos();
        break;
        
         case 4: 
